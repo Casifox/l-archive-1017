@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090B10">
+  <title>404 — L’ARCHIVE 1017</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background:
+        radial-gradient(900px 600px at 50% 20%, rgba(229, 161, 58, 0.09), transparent 65%),
+        radial-gradient(700px 500px at 20% 80%, rgba(85, 184, 201, 0.06), transparent 60%),
+        #090b10;
+      color: #e7eaf0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      text-align: center;
+    }
+    .panel {
+      width: min(620px, 100%);
+      padding: clamp(1.5rem, 5vw, 3rem);
+      border: 1px solid rgba(231, 234, 240, 0.12);
+      border-radius: 20px;
+      background: rgba(20, 25, 35, 0.78);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+    }
+    .code {
+      margin: 0;
+      color: transparent;
+      font-family: Georgia, serif;
+      font-size: clamp(4rem, 15vw, 7rem);
+      line-height: 1;
+      -webkit-text-stroke: 1px rgba(229, 161, 58, 0.55);
+    }
+    .kicker {
+      margin: 0.4rem 0 0.8rem;
+      color: #55b8c9;
+      font-family: Consolas, monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+    }
+    h1 {
+      margin: 0 0 0.6rem;
+      font-family: Georgia, serif;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 500;
+    }
+    p {
+      margin: 0 auto 1.4rem;
+      max-width: 46ch;
+      color: #9aa6ba;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.65em 1.1em;
+      border: 1px solid rgba(229, 161, 58, 0.5);
+      border-radius: 9px;
+      background: rgba(229, 161, 58, 0.14);
+      color: #f1b65a;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn:hover { background: rgba(229, 161, 58, 0.24); }
+    .hint {
+      margin-top: 1rem;
+      color: #69758b;
+      font-family: Consolas, monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <p class="code">404</p>
+    <p class="kicker">ARCHIVE 1017 · PORTE INTROUVABLE</p>
+    <h1>Cette porte n’existe pas dans l’archive.</h1>
+    <p>Le chemin demandé ne correspond à aucune salle, aucun dossier, aucune preuve. Votre progression n’a pas été modifiée.</p>
+    <a class="btn" href="./" data-home>Retour à l’archive</a>
+    <p class="hint">L’ARCHIVE 1017 — une fiction interactive</p>
+  </main>
+  <script>
+    (function () {
+      var home = document.querySelector("[data-home]");
+      if (!home) return;
+      var host = location.hostname;
+      if (location.protocol === "file:" || host === "localhost" || host === "127.0.0.1") {
+        home.href = "./";
+        return;
+      }
+      var segments = location.pathname.split("/").filter(Boolean);
+      home.href = segments.length ? "/" + segments[0] + "/" : "/";
+    })();
+  </script>
+</body>
+</html>

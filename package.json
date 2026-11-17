@@ -1,0 +1,21 @@
+{
+  "name": "l-archive-1017",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "L’ARCHIVE 1017 — thriller psychologique interactif en HTML, CSS et JavaScript natif.",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "test:e2e": "node tests/e2e.mjs",
+    "qa": "npm test && npm run build && npm run test:e2e"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

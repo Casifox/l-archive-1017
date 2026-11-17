@@ -1,0 +1,8 @@
+node_modules/
+_site/
+qa/artifacts/
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*

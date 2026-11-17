@@ -1,0 +1,431 @@
+/* ------------------------------------------------------------------ */
+/* Adaptation aux écrans                                               */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 1240px) {
+  .topbar-nav {
+    gap: 0.05rem;
+  }
+  .nav-link {
+    padding-inline: 0.55em;
+    font-size: 0.74rem;
+  }
+  .stat-chips {
+    display: none;
+  }
+  .hub-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+  .dossier-columns,
+  .puzzle-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .topbar-nav {
+    display: none;
+  }
+  .nav-toggle {
+    display: inline-flex;
+  }
+  .topbar.nav-open .topbar-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.2rem;
+    padding: 0.7rem clamp(0.9rem, 3vw, 2rem) 1rem;
+    border-bottom: 1px solid var(--line);
+    background: rgba(9, 11, 16, 0.97);
+    box-shadow: var(--shadow);
+    animation: line-in 0.18s ease both;
+  }
+  .topbar.nav-open .nav-link {
+    border-radius: var(--radius-sm);
+    padding: 0.65em 0.8em;
+  }
+  .intro-main {
+    grid-template-columns: 1fr;
+  }
+  .intro-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .intro-quote {
+    grid-column: 1 / -1;
+  }
+  .hub-layout {
+    grid-template-columns: 1fr;
+  }
+  .hub-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .dossier-columns,
+  .puzzle-layout,
+  .board-layout {
+    grid-template-columns: 1fr;
+  }
+  .board-connections {
+    order: -1;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .finale-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .load-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-main {
+    grid-template-columns: 1fr;
+    padding-top: 0.5rem;
+  }
+  .menu-visual {
+    min-height: 280px;
+    order: -1;
+    max-height: 340px;
+    overflow: hidden;
+  }
+  .menu-art {
+    width: min(100%, 360px);
+  }
+  .menu-readout {
+    right: 0.5rem;
+    bottom: 0.2rem;
+    width: 250px;
+  }
+  .menu-copy {
+    max-width: none;
+  }
+  .menu-actions,
+  .resume-card {
+    max-width: none;
+  }
+  .hub-hero {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .hub-hero-right {
+    grid-column: 1 / -1;
+    padding: 0.8rem 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+  .dossier-overview {
+    grid-template-columns: 1fr;
+  }
+  .dossier-overview-actions {
+    padding: 0.8rem 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+  .ending-columns {
+    grid-template-columns: 1fr;
+  }
+  .ending-aside {
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --topbar-h: 58px;
+  }
+  .topbar {
+    gap: 0.6rem;
+    padding-inline: 0.8rem;
+  }
+  .topbar-utilities {
+    gap: 0;
+  }
+  .topbar-utilities > a.icon-btn {
+    display: none;
+  }
+  .topbar-utilities .icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+  .brand-sub {
+    display: none;
+  }
+  .brand-title {
+    font-size: 0.9rem;
+  }
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+  .save-status {
+    display: none;
+  }
+  .main-content {
+    padding: 1rem 0.8rem 2.5rem;
+  }
+  .page-title {
+    font-size: 1.75rem;
+  }
+  .menu-top {
+    padding: 0.9rem;
+  }
+  .menu-version {
+    display: none;
+  }
+  .menu-title-main {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+  .menu-title-number {
+    font-size: clamp(3.6rem, 19vw, 6rem);
+  }
+  .menu-description {
+    font-size: 0.84rem;
+  }
+  .menu-btn {
+    min-height: 54px;
+  }
+  .menu-visual {
+    display: none;
+  }
+  .menu-main {
+    padding-inline: 0.9rem;
+  }
+  .menu-footer {
+    font-size: 0.52rem;
+  }
+  .intro-top {
+    padding: 0.8rem;
+  }
+  .intro-status {
+    display: none;
+  }
+  .intro-main {
+    padding: 0.8rem;
+  }
+  .intro-aside {
+    grid-template-columns: 1fr;
+  }
+  .intro-narrative {
+    padding: 0.85rem;
+  }
+  .dialogue-transcript {
+    max-height: none;
+    min-height: 220px;
+  }
+  .hub-hero {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .progress-ring {
+    width: 100px;
+    justify-self: start;
+  }
+  .hub-sidebar {
+    grid-template-columns: 1fr;
+  }
+  .dossier-progress,
+  .dossier-overview-bars {
+    grid-template-columns: 1fr;
+  }
+  .puzzle-grid,
+  .category-legend,
+  .single-grid,
+  .pair-grid,
+  .finale-grid {
+    grid-template-columns: 1fr;
+  }
+  .chain-pool {
+    grid-template-columns: 1fr;
+  }
+  .finale-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .finale-hero-mark {
+    width: 64px;
+    height: 64px;
+  }
+  .ending-top {
+    padding-inline: 0.9rem;
+  }
+  .ending-main {
+    padding-inline: 0.9rem;
+  }
+  .ending-title {
+    font-size: clamp(2rem, 9vw, 3.2rem);
+  }
+  .ending-stats > div {
+    font-size: 0.74rem;
+  }
+  .stats-summary,
+  .stats-choices,
+  .settings-section,
+  .credits-section,
+  .help-body,
+  .load-card,
+  .load-import,
+  .load-info,
+  .board-panel,
+  .board-association {
+    padding: 0.8rem;
+  }
+  .board-slots {
+    grid-template-columns: 1fr;
+  }
+  .board-link-icon {
+    display: none;
+  }
+  .board-slots .link-btn {
+    grid-column: auto;
+  }
+  .modal {
+    max-height: 92vh;
+  }
+  .modal-header,
+  .modal-body {
+    padding-inline: 0.9rem;
+  }
+  .modal-footer {
+    padding-inline: 0.9rem;
+  }
+  .toast-root {
+    right: 0.6rem;
+    bottom: 0.6rem;
+    width: calc(100vw - 1.2rem);
+  }
+  .assign-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px dashed var(--line);
+  }
+  .assign-row--head {
+    display: none;
+  }
+  .assign-label {
+    margin-bottom: 0.1rem;
+  }
+  .volume-control {
+    min-width: 0;
+    width: 100%;
+  }
+  .setting-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .setting-row .switch {
+    align-self: flex-start;
+  }
+  .segmented {
+    width: 100%;
+  }
+  .segment {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .page-actions {
+    gap: 0.4rem;
+  }
+  .page-actions .btn {
+    font-size: 0.78rem;
+    padding: 0.5em 0.7em;
+  }
+  .dossier-card {
+    padding: 0.8rem;
+  }
+  .dossier-card-head {
+    gap: 0.55rem;
+  }
+  .dossier-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .dossier-card-title {
+    font-size: 1.05rem;
+  }
+  .hotspot {
+    align-items: flex-start;
+  }
+  .hotspot-status {
+    display: none;
+  }
+  .order-text {
+    font-size: 0.72rem;
+  }
+  .order-handle {
+    display: none;
+  }
+  .mm-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .mm-feedback {
+    margin-left: 0;
+  }
+  .board-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+  .journal-entry-head {
+    gap: 0.3rem;
+  }
+  .journal-time {
+    width: 100%;
+    margin-left: 0;
+  }
+  .choice-summary {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .ending-top-meta {
+    gap: 0.4rem;
+  }
+  .ending-actions .btn {
+    width: 100%;
+  }
+  .finale-card-head {
+    flex-wrap: wrap;
+  }
+  .finale-card-head .status-chip {
+    margin-left: 0;
+  }
+  .load-summary {
+    font-size: 0.8rem;
+  }
+  .credits-title {
+    font-size: 2rem;
+  }
+  .standalone-main {
+    padding-inline: 0.8rem;
+  }
+}
+
+@media (max-height: 700px) and (min-width: 900px) {
+  .menu-main {
+    padding-top: 0.4rem;
+  }
+  .menu-visual {
+    min-height: 340px;
+  }
+  .menu-title-main {
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+  }
+  .menu-title-number {
+    font-size: clamp(3.4rem, 9vw, 6.6rem);
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr" data-text-size="md" data-motion="full" data-comfort="off" data-contrast="normal">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090B10">
+  <meta name="description" content="L’ARCHIVE 1017 — un thriller psychologique interactif sur la mémoire, la vérité et ce qui reste d’une personne quand on essaie de la conserver.">
+  <meta name="author" content="Projet original">
+  <meta property="og:title" content="L’ARCHIVE 1017">
+  <meta property="og:description" content="Certaines vérités préfèrent rester enfermées. Une fiction interactive dans un centre de recherche abandonné.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <title>L’ARCHIVE 1017 — Une fiction interactive</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/screens.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <div id="boot">
+    <div class="boot-screen">
+      <p class="boot-kicker">IRMP · AILE EST · VALMONT</p>
+      <h1 class="boot-title">L’ARCHIVE 1017</h1>
+      <p class="boot-subtitle">Chargement du système…</p>
+      <div class="boot-progress"><span class="boot-progress-bar" style="width: 12%"></span></div>
+    </div>
+  </div>
+
+  <div id="app"></div>
+
+  <div id="route-announcer" class="sr-only" aria-live="polite"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="false"></div>
+  <div id="modal-root"></div>
+
+  <noscript>
+    <div class="fatal-screen">
+      <div class="panel fatal-panel">
+        <h1>L’ARCHIVE 1017 nécessite JavaScript.</h1>
+        <p>Le jeu fonctionne entièrement dans votre navigateur. Activez JavaScript pour ouvrir l’archive. Aucune donnée ne sera envoyée.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

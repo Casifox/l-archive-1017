@@ -1,0 +1,143 @@
+/* ------------------------------------------------------------------ */
+/* Animations                                                          */
+/* ------------------------------------------------------------------ */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes line-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes soft-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(229, 161, 58, 0.12); }
+  50% { box-shadow: 0 0 0 8px rgba(229, 161, 58, 0); }
+}
+
+@keyframes boot-breathe {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 0.95; transform: scale(1.015); }
+}
+
+@keyframes hero-rotate {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hero-rotate-reverse {
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes particle-drift {
+  from { transform: translate3d(0, 0, 0); opacity: 0.22; }
+  to { transform: translate3d(4px, -9px, 0); opacity: 0.6; }
+}
+
+@keyframes scan-line {
+  from { transform: translateY(-6px); opacity: 0.4; }
+  to { transform: translateY(10px); opacity: 0.8; }
+}
+
+@keyframes flicker {
+  0%, 90%, 100% { opacity: 0.55; }
+  91% { opacity: 0.2; }
+  92% { opacity: 0.7; }
+  93% { opacity: 0.28; }
+  94% { opacity: 0.65; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(2px); }
+}
+
+@keyframes success-glow {
+  0% { box-shadow: 0 0 0 0 rgba(119, 201, 154, 0.25); }
+  100% { box-shadow: 0 0 0 14px rgba(119, 201, 154, 0); }
+}
+
+.puzzle-solved .solved-banner {
+  animation: success-glow 1.2s ease-out both;
+}
+
+/* Entrée en cascade des dossiers */
+.dossier-card {
+  animation: rise-in 0.45s ease both;
+}
+.dossier-card:nth-child(1) { animation-delay: 0.02s; }
+.dossier-card:nth-child(2) { animation-delay: 0.06s; }
+.dossier-card:nth-child(3) { animation-delay: 0.1s; }
+.dossier-card:nth-child(4) { animation-delay: 0.14s; }
+.dossier-card:nth-child(5) { animation-delay: 0.18s; }
+
+/* Respect de la préférence système */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

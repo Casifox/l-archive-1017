@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "checks": 62,
+  "passed": 62,
+  "consoleErrors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "docs/screenshots/01-menu.png",
+    "docs/screenshots/02-hub.png",
+    "docs/screenshots/03-dossier.png",
+    "docs/screenshots/04-puzzle.png",
+    "docs/screenshots/05-inventory.png",
+    "docs/screenshots/06-journal.png",
+    "docs/screenshots/07-board.png",
+    "docs/screenshots/08-stats.png",
+    "docs/screenshots/09-achievements.png",
+    "docs/screenshots/10-404.png",
+    "docs/screenshots/11-finale.png",
+    "docs/screenshots/ending-publier.png",
+    "docs/screenshots/ending-detruire.png",
+    "docs/screenshots/ending-gardien.png",
+    "docs/screenshots/ending-eveil.png",
+    "docs/screenshots/12-mobile-hub.png",
+    "docs/screenshots/13-mobile-dossier.png",
+    "docs/screenshots/14-mobile-puzzle.png"
+  ],
+  "durationMs": 45709,
+  "results": [
+    {
+      "name": "menu visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "titre du document",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nouvelle partie disponible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "continuer désactivé sans sauvegarde",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "arrivée dans le hub",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dossier 01 disponible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dossier 02 verrouillé",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contenu du dossier affiché après briefing",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "énigme de contradiction résolue",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "énigme des badges résolue",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bouton de clôture disponible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dossier 02 débloqué",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dossier 01 marqué clos",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dossier 02 déverrouillé dans la sauvegarde",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "continuer actif après sauvegarde",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "carte de reprise visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reprise dans le hub",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dossier 01 clos après rechargement",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "inventaire alimenté",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "recherche d’une preuve",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "journal des événements",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "journal des décisions",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "journal des objectifs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "connexion du tableau découverte",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "aucun texte null dans les emplacements",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "trois cartes de statistiques",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "succès Observateur débloqué",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "panneau des fins présent",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "taille de texte appliquée",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mode confort appliqué",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contraste élevé appliqué",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "paramètres persistés après rechargement",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "export au bon format",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "import adopté et hub restauré",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pause ouverte par Échap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pause refermée",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "navigation clavier — focus sur un élément interactif",
+      "ok": true,
+      "detail": "A"
+    },
+    {
+      "name": "écran 404 interne",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "finale — carte publier",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin publier — thème",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin publier — titre",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin publier — profil",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "finale — carte detruire",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin detruire — thème",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin detruire — titre",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin detruire — profil",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "finale — carte gardien",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin gardien — thème",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin gardien — titre",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin gardien — profil",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "finale — carte eveil",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin eveil — thème",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin eveil — titre",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "fin eveil — profil",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile — pas de débordement horizontal (hub)",
+      "ok": true,
+      "detail": "débordement 0px"
+    },
+    {
+      "name": "mobile — menu de navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile — pas de débordement horizontal (dossier)",
+      "ok": true,
+      "detail": "débordement 0px"
+    },
+    {
+      "name": "mobile — pas de débordement horizontal (énigme)",
+      "ok": true,
+      "detail": "débordement 0px"
+    },
+    {
+      "name": "tablette 768×1024 — pas de débordement",
+      "ok": true,
+      "detail": "débordement 0px"
+    },
+    {
+      "name": "desktop 1920×1080 — pas de débordement",
+      "ok": true,
+      "detail": "débordement 0px"
+    },
+    {
+      "name": "réinitialisation — sauvegarde supprimée",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "réinitialisation — continuer désactivé",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
