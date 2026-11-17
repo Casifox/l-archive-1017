@@ -10,6 +10,7 @@
     "build": "node scripts/build.mjs",
     "test": "node --test",
     "test:e2e": "node tests/e2e.mjs",
+    "check:public": "node qa/public-check.mjs",
     "qa": "npm test && npm run build && npm run test:e2e"
   },
   "devDependencies": {
