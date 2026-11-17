@@ -185,15 +185,16 @@ Vérifié :
 |---|---|
 | Dépôt créé | **Oui** — `Casifox/l-archive-1017` |
 | Workflow GitHub Actions | **Présent** — `.github/workflows/deploy.yml` |
-| Versions d’actions | `checkout@v4`, `setup-node@v4`, `configure-pages@v5`, `upload-pages-artifact@v3`, `deploy-pages@v5` |
+| Versions d’actions | `checkout@v7`, `setup-node@v7`, `configure-pages@v6`, `upload-pages-artifact@v5`, `deploy-pages@v5` |
 | Artefact publié | `_site`, généré et vérifié par `npm run build` |
 | `.nojekyll` | **Présent** |
 | Chemins relatifs | **Vérifiés** |
 | Routage compatible sous-dossier | **Hash routing** |
 | Page 404 | **Présente** |
-| Source Pages | À confirmer dans **Settings → Pages → GitHub Actions** |
-| URL attendue | `https://casifox.github.io/l-archive-1017/` |
-| Vérification HTTP finale | À effectuer après le premier déploiement |
+| Source Pages | **GitHub Actions**, configurée via l’API |
+| URL publique | **https://casifox.github.io/l-archive-1017/** |
+| Vérification HTTP | **200** le 17/11/2026 |
+| Vérification navigateur | **Chromium : menu affiché, 0 erreur console, 0 requête externe** |
 
 La publication et la vérification publique sont décrites dans le rapport final de la mission. Aucune URL n’est déclarée « en ligne » avant sa vérification HTTP réelle.
 
@@ -207,6 +208,7 @@ npm test
 npm run build
 npx playwright install chromium
 npm run test:e2e
+npm run check:public
 ```
 
 Ou :

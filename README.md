@@ -124,6 +124,7 @@ npm run build               # construit _site et vérifie références, imports 
 npx playwright install chromium
 npm run test:e2e            # 62 vérifications réelles dans Chromium
 npm run qa                  # tests + build + E2E
+npm run check:public        # vérifie l’URL GitHub Pages publiée
 ```
 
 Résultats de la version 1.0.0 :
@@ -241,13 +242,13 @@ Le jeu sauvegarde automatiquement après chaque action importante.
 
 Le dépôt contient un workflow officiel `.github/workflows/deploy.yml` :
 
-1. `actions/checkout@v4`
-2. `actions/setup-node@v4` (Node 22)
+1. `actions/checkout@v7`
+2. `actions/setup-node@v7` (Node 22)
 3. `npm ci`
 4. `npm test`
 5. `npm run build`
-6. `actions/configure-pages@v5`
-7. `actions/upload-pages-artifact@v3` avec `_site`
+6. `actions/configure-pages@v6`
+7. `actions/upload-pages-artifact@v5` avec `_site`
 8. `actions/deploy-pages@v5`
 
 Pour activer la publication sur un nouveau dépôt :
